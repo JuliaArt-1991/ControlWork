@@ -10,3 +10,18 @@
         }
     }
 }
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} \t");
+    }
+    Console.WriteLine();
+}
+
+Console.Clear();
+string[] array1 = new string[5] { "-2", "2023", ":)", "yes", "no" };
+string[] array2 = new string[array1.Length];
+NewArray(array1, array2);
+PrintArray(array2);
